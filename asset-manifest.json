@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/VSHOP/static/css/main.f5f66871.css",
-    "main.js": "/VSHOP/static/js/main.03b606e7.js",
+    "main.js": "/VSHOP/static/js/main.3aad9405.js",
     "static/media/cart-empty.jpg": "/VSHOP/static/media/cart-empty.8a5dbabea86b9d6fac34.jpg",
     "index.html": "/VSHOP/index.html",
     "main.f5f66871.css.map": "/VSHOP/static/css/main.f5f66871.css.map",
-    "main.03b606e7.js.map": "/VSHOP/static/js/main.03b606e7.js.map"
+    "main.3aad9405.js.map": "/VSHOP/static/js/main.3aad9405.js.map"
   },
   "entrypoints": [
     "static/css/main.f5f66871.css",
-    "static/js/main.03b606e7.js"
+    "static/js/main.3aad9405.js"
   ]
 }
