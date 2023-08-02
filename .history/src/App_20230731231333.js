@@ -23,7 +23,7 @@ export default function App() {
                 {/* <Header /> */}
                 <Routes>
                     <Route path='/private' element={ <PrivatePage /> }/>
-                    <Route path='/home' element={ <HomePage /> }/>
+                    <Route path='/' element={ <HomePage /> }/>
                     <Route path='/products/:id' element={ <ProductOverView /> }/>
                     <Route path='/private/private/products/:id' element={ <ProductOverViewPrivate /> }/>
                     <Route path="/login" element={ <LoginPage /> } />
