@@ -11,7 +11,7 @@ export function CartItem({item}) {
     const decrementProduct = id => dispatch(decrementProductInCart(id))
     const removeProduct = id => dispatch(removeItemFromCart(id))
 
-    const sum = Math.round(item.price * item.quantity  * 0.9 * 100) / 100
+    const sum = item.price * item.quantity
     const options = [item.brand, item.size, item.color]
     const option = ` (${options.filter(item => item).join(' - ')})`
 
