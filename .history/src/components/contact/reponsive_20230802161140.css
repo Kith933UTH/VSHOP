@@ -56,14 +56,14 @@
     }
 }
 
-/* 
+
 @media screen and (max-width: 836px) {
     .contact-section {
         min-height: 96vh;
     }
-} */
+}
 
-@media screen and (max-width: 770px) {
+/* @media screen and (max-width: 770px) {
     .contact-section {
         height: 1100px;
     }
@@ -72,7 +72,7 @@
         width: 88%;
         height: auto;
     }
-}
+} */
 
 @media screen and (max-width: 680px) {
     .contact-section {

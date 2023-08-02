@@ -4,7 +4,7 @@ import './reponsive.css'
 export function Contact() {
     return (
         <div className="contact-section max-w-[1240px] mx-auto py-2 text-sm sm:text-base" id="contact">
-            <div className="form-area max-w-[1240px] in-h-fit flex justify-center mt-4">
+            <div className="form-area max-w-[1240px] in-h-fit">
                 <div className="form-wrap"> 
                 <div className="title">
                     <h1>Contact Us</h1>

@@ -11,7 +11,7 @@ export function CartShopping({cart}) {
     const totalPrice = () => {
         let price = 0
         cart.forEach(item => price += item.price * item.quantity)
-        return Math.round(price * 0.9 * 100) / 100
+        return price.toFixed(2)
     }
 
     const toggleClose = () => {

@@ -1,7 +1,7 @@
-@media screen and (min-width: 940px) and (max-width: 1360px) {
-    /* .contact-section {
+@media screen and (max-width: 1360px) {
+    .contact-section {
         height: 107vh;
-    } */
+    }
     .form-area .form-wrap {
         width: 90%;
         height: 620px;
@@ -56,14 +56,14 @@
     }
 }
 
-/* 
+
 @media screen and (max-width: 836px) {
     .contact-section {
         min-height: 96vh;
     }
-} */
+}
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 760px) {
     .contact-section {
         height: 1100px;
     }

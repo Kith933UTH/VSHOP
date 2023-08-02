@@ -1,12 +1,12 @@
 .contact-section {
-    /* height: 96vh; */
+    height: 96vh;
     width: 100%;
     border-bottom: 1px solid #999;
 }
 
 .form-area {
     position: relative;
-    /* height:84vh; */
+    height:700px;
     width: 100%;
     background: black;
     -webkit-box-sizing: border-box;
@@ -14,11 +14,11 @@
 }
 
 .form-area .form-wrap {
-    /* position: absolute; */
-    /* left: 50%;
+    position: absolute;
+    left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    transform: translateX(-50%); */
+    transform: translateX(-50%);
     width: 1120px;
     background-color: white;
     background-size: cover;
