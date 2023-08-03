@@ -1,10 +1,10 @@
 import React from "react"
-// import { useState } from "react"
+import { useState } from "react"
 import {Context} from "./context/context"
 import {Route, Routes} from "react-router-dom"
 import {HomePage} from "./pages/HomePage"
 import {ProductOverView} from "./pages/ProductOverView"
-// import {Header} from "./components/header/Header"
+import {Header} from "./components/header/Header"
 import {Footer} from "./components/footer/Footer"
 import {BtnScroll} from "./components/btn-scroll/BtnScroll"
 import { LoginPage } from "./components/login/LoginPage"
@@ -23,7 +23,7 @@ export default function App() {
                 {/* <Header /> */}
                 <Routes>
                     <Route path='/private' element={ <PrivatePage /> }/>
-                    <Route index element={ <HomePage /> }/>
+                    <Route path='/' element={ <HomePage /> }/>
                     <Route path='/products/:id' element={ <ProductOverView /> }/>
                     <Route path='/private/private/products/:id' element={ <ProductOverViewPrivate /> }/>
                     <Route path="/login" element={ <LoginPage /> } />

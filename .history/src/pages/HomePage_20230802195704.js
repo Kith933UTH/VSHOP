@@ -13,6 +13,9 @@ export function HomePage() {
         return newData?.filter(product => product.category === category)
             .map(product => <ProductItem product={product} key={product.id} />)
     }
+
+    console.log(newData.map((item) => item.image))
+
     const filterByPrice = price => {
         const products = newData?.filter(item => item.price >= price[0] && item.price <= price[1])
             .map(product => <ProductItem product={product} key={product.id} />)
