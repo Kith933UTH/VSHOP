@@ -1,12 +1,14 @@
-import React from "react"
+import React, { useEffect } from "react"
 import {useGetProductsAllQuery} from "../redux/products/products.api"
 import {ProductItem} from "../components/product-item/ProductItem"
 import {Loader} from "../components/loader/Loader"
 import {ProductFilters} from "../components/product-filters/ProductFilters"
 import {useSelector} from "react-redux"
 import { Header } from "../components/header/Header"
-
-export function PrivatePage() {
+export function HomePage() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     const { data, error, isLoading, status } = useGetProductsAllQuery()
     const {filters, searchFilterProducts} = useSelector(state => state.product)
     const newData = (data?.map((item) => ({...item, discout: 0.1, oldPrice : item.price, price: Math.round(item.price * 0.9 * 100) / 100 })))
@@ -14,7 +16,6 @@ export function PrivatePage() {
         return newData?.filter(product => product.category === category)
             .map(product => <ProductItem product={product} key={product.id} />)
     }
-
     const filterByPrice = price => {
         const products = newData?.filter(item => item.price >= price[0] && item.price <= price[1])
             .map(product => <ProductItem product={product} key={product.id} />)
@@ -46,12 +47,11 @@ export function PrivatePage() {
         if (filters.rating) return filterByRating(filters.rating)
         if (searchFilterProducts) return filterSearch(searchFilterProducts)
 
-        return newData?.map(product => <ProductItem product={product} key={product.id} login/>)
+        return newData?.map(product => <ProductItem product={product} key={product.id}/>)
     }
-
     return (
         <>
-        <Header login />
+        <Header />
             <div className='container mb-[20px] mt-[60px] max-w-[1240px] flex flex-col justify-center items-center xl:flex xl:justify-center xl:flex-row xl:items-start mx-auto transition-all flex-auto'>
                 {isLoading && <Loader />}
                 {error && <p className='text-center mt-4'>{error.error}</p>}

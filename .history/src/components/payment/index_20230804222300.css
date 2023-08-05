@@ -1,0 +1,35 @@
+.payment-page input:not(.payment-page input[type=radio]){
+    width: 15rem;
+    padding: .3rem;
+    border-radius: 5px;
+    outline: none;
+    border: none
+}
+
+.payment-page h2 {
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+.payment-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: white;
+    padding-top: 100px;
+}
+
+.payment-page form {
+    display: inline-block;
+    padding: 2rem;
+    margin: 2rem 0 1rem 0
+}
+
+.payment-page form label {
+    float: left;
+    font-size: .9rem;
+    margin: 0;
+    padding: 0
+}
